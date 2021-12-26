@@ -30,3 +30,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/leaderboard', function ()
 Route::middleware(['auth:sanctum', 'verified'])->get('/compete', function () {
     return view('compete');
 })->name('compete');
+Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
+    return view('home');
+})->name('home');
