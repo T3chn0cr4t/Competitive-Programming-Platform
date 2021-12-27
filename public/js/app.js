@@ -5451,6 +5451,25 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
+var countDownDate = new Date("Jul 25, 2022 16:37:52").getTime();
+setInterval(function timer() {
+  var now = new Date().getTime();
+  var timeleft = countDownDate - now;
+  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hours = Math.floor(timeleft % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+  var minutes = Math.floor(timeleft % (1000 * 60 * 60) / (1000 * 60));
+  var seconds = Math.floor(timeleft % (1000 * 60) / 1000);
+
+  function pad(n) {
+    return n < 10 ? "0" + n : n;
+  }
+
+  document.getElementById('days').innerHTML = pad(days);
+  document.getElementById('hours').innerHTML = pad(hours);
+  document.getElementById('minutes').innerHTML = pad(minutes);
+  document.getElementById('seconds').innerHTML = pad(seconds);
+  return timer;
+}(), 1000);
 
 /***/ }),
 

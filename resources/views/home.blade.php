@@ -12,7 +12,7 @@
           <ul class="flex gap-2 flex-col lg:flex-row w-full lg:w-fit">
                   <li>
                     <div class="focus:outline-none focus:bg-yellow-200 p-8 lg:w-72 rounded-md border border-r-0 bg-white flex flex-col items-center">
-                      <p class="font-semibold text-4xl">65</p>
+                      <p id="days" class="font-semibold text-4xl"></p>
                       <p class="uppercase text-gray-600 text-5xl">
                         days
                       </p>
@@ -20,7 +20,7 @@
                   </li>
                   <li>
                     <div class="focus:outline-none focus:bg-yellow-200 p-8 lg:w-72 rounded-md border border-r-0 bg-white flex flex-col items-center">
-                      <p class="font-semibold text-4xl">08</p>
+                      <p id="hours" class="font-semibold text-4xl"></p>
                       <p class="uppercase text-gray-600 text-5xl">
                         hours
                       </p>
@@ -28,7 +28,7 @@
                   </li>
                   <li>
                     <div class="focus:outline-none focus:bg-yellow-200 p-8 lg:w-72 rounded-md border border-r-0 bg-white flex flex-col items-center">
-                      <p class="font-semibold text-4xl">13</p>
+                      <p id="minutes" class="font-semibold text-4xl"></p>
                       <p class="uppercase text-gray-600 text-5xl">
                         minutes
                       </p>
@@ -36,7 +36,7 @@
                   </li>
                   <li>
                     <div class="focus:outline-none focus:bg-yellow-200 p-8 lg:w-72 rounded-md border border-r-0 bg-white flex flex-col items-center">
-                      <p class="font-semibold text-4xl">37</p>
+                      <p id="seconds" class="font-semibold text-4xl"></p>
                       <p class="uppercase text-gray-600 text-5xl">
                         seconds
                       </p>

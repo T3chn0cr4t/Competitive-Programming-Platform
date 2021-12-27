@@ -9,10 +9,31 @@ module.exports = {
     ],
 
     theme: {
+        // colors: {
+        //     transparent: 'transparent',
+        //     current: 'currentColor',
+        //     'white': '#ffffff',
+        //     'purple': '#3f3cbb',
+        //     'grey': '#EFEFEF'
+        // },
+
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Outfit', ...defaultTheme.fontFamily.sans],
             },
+            // fontWeight: {
+            //     hairline: 100,
+            //     'extra-light': 100,
+            //     thin: 200,
+            //     light: 300,
+            //     normal: 400,
+            //     medium: 500,
+            //     semibold: 600,
+            //     bold: 700,
+            //     extrabold: 800,
+            //     'extra-bold': 800,
+            //     black: 900,
+            // }
         },
     },
 
