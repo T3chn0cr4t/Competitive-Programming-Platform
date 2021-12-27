@@ -17,11 +17,13 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+
+        <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100 flex flex-col">
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
@@ -34,9 +36,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
                 {{ $slot }}
-            </main>
         </div>
 
         @stack('modals')
